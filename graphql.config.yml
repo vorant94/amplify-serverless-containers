@@ -1,0 +1,4 @@
+schema:
+  - appsync.graphql
+  - amplify/backend/api/serverlesscontainers/build/schema.graphql
+documents: '**/*.graphql'
