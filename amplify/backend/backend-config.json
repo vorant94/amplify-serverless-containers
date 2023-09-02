@@ -1,20 +1,35 @@
 {
   "api": {
-    "serverlesscontainers": {
-      "dependsOn": [],
-      "output": {
-        "authConfig": {
-          "additionalAuthenticationProviders": [],
-          "defaultAuthentication": {
-            "apiKeyConfig": {
-              "apiKeyExpirationDays": 7
-            },
-            "authenticationType": "API_KEY"
-          }
+    "scgotenberg": {
+      "apiType": "REST",
+      "authName": "serverlesscontainers",
+      "build": true,
+      "dependsOn": [
+        {
+          "attributes": [
+            "ClusterName",
+            "VpcId",
+            "VpcCidrBlock",
+            "SubnetIds",
+            "VpcLinkId",
+            "CloudMapNamespaceId"
+          ],
+          "category": "",
+          "resourceName": "NetworkStack"
         }
+      ],
+      "deploymentMechanism": "FULLY_MANAGED",
+      "iamAccessUnavailable": true,
+      "imageSource": {
+        "template": "dockercompose-rest-express",
+        "type": "TEMPLATE"
       },
       "providerPlugin": "awscloudformation",
-      "service": "AppSync"
+      "resourceName": "scgotenberg",
+      "restrictAccess": true,
+      "service": "ElasticContainer",
+      "skipHashing": false
     }
-  }
+  },
+  "auth": {}
 }

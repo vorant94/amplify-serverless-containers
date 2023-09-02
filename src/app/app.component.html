@@ -1,11 +1,10 @@
 <button mat-raised-button
         color="primary"
         (click)="fileInput.click()">
-  Choose the PDF file
+  Choose the file to convert
 </button>
 
 <input #fileInput
        hidden
        type="file"
-       accept="application/pdf"
        (change)="onFileSelected($event)">

@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  gotenberg:
+    build:
+      context: ./gotenberg
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+
+networks:
+  public:
+  private:

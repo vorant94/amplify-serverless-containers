@@ -9,11 +9,12 @@
       "UnauthRoleName": "amplify-serverlesscontainers-dev-101210-unauthRole",
       "StackName": "amplify-serverlesscontainers-dev-101210",
       "StackId": "arn:aws:cloudformation:eu-central-1:937394774638:stack/amplify-serverlesscontainers-dev-101210/0a619740-4960-11ee-9161-02b13cf3a6f1",
-      "AmplifyAppId": "dwdqsupfp2sf"
+      "AmplifyAppId": "dwdqsupfp2sf",
+      "NetworkStackS3Url": "https://s3.amazonaws.com/amplify-serverlesscontainers-dev-101210-deployment/amplify-cfn-templates/networkingStackTemplate.json"
     },
     "categories": {
       "api": {
-        "serverlesscontainers": {}
+        "scgotenberg": {}
       }
     }
   }

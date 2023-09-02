@@ -1,9 +1,12 @@
 export type AmplifyDependentResourcesAttributes = {
   "api": {
-    "serverlesscontainers": {
-      "GraphQLAPIEndpointOutput": "string",
-      "GraphQLAPIIdOutput": "string",
-      "GraphQLAPIKeyOutput": "string"
+    "scgotenberg": {
+      "ApiName": "string",
+      "ClusterName": "string",
+      "ContainerNames": "string",
+      "PipelineName": "string",
+      "RootUrl": "string",
+      "ServiceName": "string"
     }
   }
 }

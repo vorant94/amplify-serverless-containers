@@ -8,7 +8,8 @@
       "SourceDir": "src",
       "DistributionDir": "dist/amplify-serverless-containers",
       "BuildCommand": "npm run-script build",
-      "StartCommand": "ng serve"
+      "StartCommand": "ng serve",
+      "ServerlessContainers": true
     }
   },
   "providers": [
